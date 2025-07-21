@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kunj - Personal Portfolio</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets\images\logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for file icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- MAIN CONTAINER -->
+    <main>
+      <!-- SIDEBAR -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Kunj Jarsaniya"
+              width="80"
+            />
+          </figure>
+          <div class="info-content">
+            <h1 class="name" title="Kunj Jarsaniya">Kunj Jarsaniya</h1>
+            <p class="title">Data Scientist</p>
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <!-- CONTACTS LIST -->
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:kunjjarsaniya07@gmail.com" class="contact-link"
+                  >kunjjarsaniya07@gmail.com</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+919104012048" class="contact-link"
+                  >+91 9104012048</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="2007-09-06">6 September, 2007</time>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Gujarat, India</address>
+              </div>
+            </li>
+          </ul>
+          <div class="separator"></div>
+          <!-- SOCIAL LINKS -->
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/kunj-jarsaniya07"
+                class="social-link"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://github.com/kunjjarsaniya"
+                class="social-link"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <!-- Download CV Button Styled as Social Link -->
+              <a
+                href="./assets/Resume/kunj-jarsaniya-cv.pdf"
+                class="social-link btn download-cv-btn"
+                download
+                aria-label="Download CV"
+                title="Download CV"
+              >
+                <i class="fa fa-file-text-o"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <div class="main-content">
+        <!-- NAVBAR -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ABOUT SECTION -->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+          <section class="about-text">
+            <p>
+              I'm a Data Science student from India, exploring the world of
+              data, AI, and machine learning. I love turning raw data into
+              meaningful insights and building simple, smart solutions.
+            </p>
+            <p>
+              I'm currently learning how to analyze data, build ML models, and
+              create interactive dashboards. My goal is to understand how data
+              science is used in real industries and apply my skills to solve
+              real-world problems.
+            </p>
+            <p>
+              I’m passionate about learning, experimenting, and growing in this
+              exciting field—and I’m on a journey to become a skilled data
+              science developer.
+            </p>
+          </section>
+
+          <!-- SERVICES -->
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="assets/images/icon-data_analysis.png"
+                    alt="Data Analysis"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Data Analysis</h4>
+                  <p class="service-item-text">
+                    Exploring real-world datasets, cleaning data, and finding
+                    insights using Python, Pandas, and NumPy.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="assets/images/icon-machine-learning.png"
+                    alt="Machine Learning"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Machine Learning</h4>
+                  <p class="service-item-text">
+                    Building ML models for predictions and classification using
+                    scikit-learn and real datasets.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="assets/images/icon-interactive-dashboard.png"
+                    alt="Interactive Dashboards"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Interactive Dashboards</h4>
+                  <p class="service-item-text">
+                    Creating dashboards with Streamlit and Power BI to visualize
+                    data and share insights easily.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="assets/images/icon-learning-research.png"
+                    alt="Learning & Research"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Learning & Research</h4>
+                  <p class="service-item-text">
+                    Continuously learning about data science tools, AI trends,
+                    and industry use cases through projects and courses.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- TESTIMONIALS -->
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="assets/images/avatar-1.png"
+                      alt="Zeel"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Zeel Jasani
+                  </h4>
+                  <div
+                    class="testimonials-text"
+                    data-testimonials-text
+                    data-index="0"
+                  >
+                    <p>
+                      Collaborating with Kunj was a great experience. His data
+                      insights helped shape our project.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="assets/images/avatar-2.png"
+                      alt="Abhi"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Abhi Jagani
+                  </h4>
+                  <div
+                    class="testimonials-text"
+                    data-testimonials-text
+                    data-index="1"
+                  >
+                    <p>
+                      Kunj has a sharp understanding of ML pipelines and DevOps
+                      collaboration. Always reliable.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="assets/images/avatar-3.png"
+                      alt="Sakshi"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4
+                    class="h4 testimonials-item-title" data-testimonials-title>
+                    Sakshi Ghodasara
+                  </h4>
+                  <div class="testimonials-text" data-testimonials-text data-index="2">
+                    <p>
+                      Kunj brings data and design together beautifully. His
+                      dashboards are insightful and elegant.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="assets/images/avatar-4.png"
+                      alt="Nitiksha"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Nitiksha Godhasara
+                  </h4>
+                  <div
+                    class="testimonials-text"
+                    data-testimonials-text
+                    data-index="3"
+                  >
+                    <p>
+                      It’s a joy working with Kunj. He blends frontend
+                      integration with intelligent models seamlessly.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- TESTIMONIALS MODAL -->
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="User"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Friend Name</h4>
+                <time datetime="2024-06-10">10 June, 2024</time>
+                <div data-modal-text>
+                  <p>
+                    Full testimonial will load here dynamically when a
+                    testimonial is clicked.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!-- RESUME SECTION -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+          <!-- EDUCATION TIMELINE -->
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Noble University</h4>
+                <span>2023 — 2026</span>
+                <p class="timeline-text">
+                  I’m currently studying Computer Engineering at Noble
+                  University, where I’m learning the foundations of programming,
+                  databases, and system design.
+                </p>
+                <p class="timeline-text" style="margin-top: 5px">
+                  Along with my studies, I spend time exploring data science,
+                  building projects, and learning about machine learning and AI.
+                  My goal is to apply what I learn to solve real-world problems
+                  and grow into a skilled data science developer.
+                </p>
+              </li>
+            </ol>
+          </section>
+          <!-- SKILLS -->
+          <section class="skill">
+            <h3 class="h3 skills-title">My Skills</h3>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python & Libraries</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Data Analysis & EDA</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Machine Learning</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">SQL & Databases</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Data Visualization</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Streamlit & Dashboards</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Git & GitHub</h5>
+                  <data value="65">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 65%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Communication & Teamwork</h5>
+                  <data value="90">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- PORTFOLIO SECTION -->
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+          <section class="projects">
+            <!-- FILTER BUTTONS -->
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Machine Learning</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Dashboards</button>
+              </li>
+              <li class="filter-item"><button data-filter-btn>NLP</button></li>
+            </ul>
+            <!-- FILTER SELECT (for mobile) -->
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Machine Learning</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Dashboards</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>NLP</button>
+                </li>
+              </ul>
+            </div>
+            <!-- PROJECT LIST -->
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="machine learning"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="assets/images/project_1-heart-disease-predictor.jpeg"
+                      alt="Heart Disease Predictor"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Heart Disease Predictor</h3>
+                  <p class="project-category">Machine Learning</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="dashboards"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="assets/images/project_2-sales-insights-dashboard.png"
+                      alt="Sales Dashboard"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Sales Insights Dashboard</h3>
+                  <p class="project-category">Dashboards</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="nlp"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="assets/images/project_3-movie-recommendation-system.png"
+                      alt="Movie Recommender"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Movie Recommendation System</h3>
+                  <p class="project-category">NLP</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="machine learning"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="assets/images/project_4-customer-churn-prediction.png"
+                      alt="Churn Analysis"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Customer Churn Analysis</h3>
+                  <p class="project-category">Machine Learning</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="dashboards"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="assets/images/project_5-covid-data-tracker-dashboard.png"
+                      alt="Covid Data Dashboard"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Covid Data Tracker</h3>
+                  <p class="project-category">Dashboards</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- BLOG SECTION -->
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="assets/images/blog_1.png"
+                      alt="My Data Science Journey"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Data Science</p>
+                      <span class="dot"></span>
+                      <time datetime="2025-05-01">May 1, 2025</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      How I Started Learning Data Science
+                    </h3>
+                    <p class="blog-text">
+                      Sharing my journey from beginner to building real ML
+                      projects as a student developer.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="assets/images/blog_2.png"
+                      alt="Top Python Libraries"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Python</p>
+                      <span class="dot"></span>
+                      <time datetime="2025-05-15">May 15, 2025</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Top Python Libraries for Data Science in 2025
+                    </h3>
+                    <p class="blog-text">
+                      A quick guide to the most useful and beginner-friendly
+                      libraries for data projects.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="assets/images/blog_3.png"
+                      alt="Streamlit Projects"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Projects</p>
+                      <span class="dot"></span>
+                      <time datetime="2025-06-01">June 1, 2025</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      3 Streamlit Apps You Can Build as a Student
+                    </h3>
+                    <p class="blog-text">
+                      Easy and impressive Streamlit app ideas you can showcase
+                      in your portfolio.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="assets/images/blog_4.webp"
+                      alt="Resume Tips"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Career</p>
+                      <span class="dot"></span>
+                      <time datetime="2025-06-10">June 10, 2025</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      5 Resume Tips for Data Science Students
+                    </h3>
+                    <p class="blog-text">
+                      What to include (and what to avoid) in your data science
+                      resume to stand out.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- CONTACT SECTION -->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+          <!-- MAP -->
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723467.0544044066!2d69.03780402008216!3d22.304670599386248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f9d7714e25%3A0x3d8e2c7a9f0cda17!2sGujarat!5e0!3m2!1sen!2sin!4v1719400000000!5m2!1sen!2sin"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </figure>
+          </section>
+          
+          <!-- CONTACT FORM -->
+          <section class="contact-form">
+            <h3 class="h3 form-title">Get in Touch</h3>
+            <form
+              action="https://formsubmit.co/kunjjarsaniya07@gmail.com"
+              method="POST"
+              class="form"
+              data-form
+            >
+              <input type="text" name="_honey" style="display: none" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="http://127.0.0.1:3000/thank-you.html" />
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Your Name"
+                  required
+                  data-form-input
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Your Email"
+                  required
+                  data-form-input
+                />
+              </div>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Write your message here..."
+                required
+                data-form-input
+              ></textarea>
+              <button class="form-btn" type="submit" data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
