@@ -801,11 +801,17 @@
               action="https://formsubmit.co/kunjjarsaniya07@gmail.com"
               method="POST"
               class="form"
-              data-form              
+              data-form
             >
-              <input type="text" name="_honey" style="display: none" />
+              <!-- Honeypot field to block bots -->
+              <input type="text" name="_honey" style="display: none;" />
+          
+              <!-- Disable CAPTCHA -->
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://kunjjarsaniya.github.io/Data-Scientist-Portfolio/thank-you.html">
+          
+              <!-- Redirect after submission -->
+              <input type="hidden" name="_next" value="https://kunjjarsaniya.github.io/Data-Scientist-Portfolio/thank-you.html" />
+          
               <div class="input-wrapper">
                 <input
                   type="text"
@@ -824,6 +830,7 @@
                   data-form-input
                 />
               </div>
+          
               <textarea
                 name="message"
                 class="form-input"
@@ -831,6 +838,7 @@
                 required
                 data-form-input
               ></textarea>
+          
               <button class="form-btn" type="submit" data-form-btn>
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Send Message</span>
